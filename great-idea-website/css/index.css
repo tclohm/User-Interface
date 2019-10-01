@@ -64,3 +64,146 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+/*div {
+	border: 2px solid red;
+}*/
+
+.container {
+	margin: 0 auto;
+	width: 80%;
+	position: relative;
+}
+
+.nav-container {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 85%;
+	position: absolute;
+}
+
+.nav-item {
+	display: inline-block;
+	margin: 20px 3.5%;
+	position: relative;
+	top: 5%;
+
+	text-decoration: none;
+	color: lightgray;
+}
+
+.nav-item:first-child {
+	margin-left: 0px;
+}
+
+.nav-item:hover {
+	color: black;
+}
+
+.nav-logo {
+	display: inline-block;
+	position: absolute;
+	right: 0%;
+	top: 10px;
+}
+
+/* banner after navigation */
+
+.banner {
+	display: block;
+	width: 100%;
+	height: 550px;
+	position: relative;
+	border-bottom: 1px solid black;
+}
+
+.innovation-card-left {
+	display: inline-block;
+	width: 55%;
+	height: 60%;
+	position: relative;
+	top: 25%;
+
+	text-align: center;
+	font-size: 80px;
+}
+
+.innovation-card-left .get-started-btn {
+	border: 1px solid black;
+	position: relative;
+	display: block;
+	width: 40%;
+	padding: 8px 15px;
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+	bottom: 10px;
+	left: 30%;
+}
+
+
+.img-card-right {
+	display: inline-block;
+	position: absolute;
+	right: 0%;
+	top: 18%;
+
+}
+
+
+.two-columns, .three-columns {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+
+#features, #about {
+	display: inline-block;
+	position: relative;
+	width: 45%;
+	top: 25%;
+}
+
+#about {
+	position: absolute;
+	right: 0%;
+}
+
+.img-python-code {
+	display: block;
+	margin: 0 auto;
+}
+
+.three-columns {
+	height: 250px;
+	border-bottom: 1px solid black;
+}
+
+
+#services, #product, #vision {
+	display: inline-block;
+	position: relative;
+	width: 33%;
+	height: 70%;
+	top: 25%;
+}
+
+#vision {
+	right: 0%;
+}
+
+
+#contact {
+	display: block;
+	width: 100%;
+	height: 200px;
+	margin: 40px 0 0 0;
+}
+
+footer {
+	height: 100px;
+}
+
+footer p {
+	text-align: center;
+}
