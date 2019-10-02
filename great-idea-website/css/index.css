@@ -66,8 +66,8 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 /*div {
 	border: 2px solid red;
-}*/
-
+}
+*/
 .container {
 	margin: 0 auto;
 	width: 80%;
@@ -77,23 +77,33 @@ h1, h2, h3, h4, h5 {
 .nav-container {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 85%;
-	position: absolute;
+	width: 100%;
+	position: fixed;
+	background: rgb(218,16,179);
+	background: linear-gradient(270deg, rgba(218,16,179,1) 0%, rgba(242,249,71,1) 48%, rgba(0,255,230,1) 94%);
+	z-index: 1;
+}
+
+.nav-container:scroll {
+	box-shadow: 5px 10px;
 }
 
 .nav-item {
 	display: inline-block;
-	margin: 20px 3.5%;
+	margin: 20px 2.7%;
 	position: relative;
 	top: 5%;
+	left: 8%;
 
 	text-decoration: none;
-	color: lightgray;
+	color: lightslategrey;
+	background-color: clear;
 }
 
-.nav-item:first-child {
-	margin-left: 0px;
-}
+
+/*.nav-item:first-child {
+	left: 3%;
+}*/
 
 .nav-item:hover {
 	color: black;
@@ -101,9 +111,10 @@ h1, h2, h3, h4, h5 {
 
 .nav-logo {
 	display: inline-block;
-	position: absolute;
-	right: 0%;
+	position: fixed;
 	top: 10px;
+	right: 9%;
+	background-color: clear;
 }
 
 /* banner after navigation */
@@ -141,11 +152,23 @@ h1, h2, h3, h4, h5 {
 }
 
 
+.get-started-btn:hover {
+	background-color: black;
+	color: white;
+}
+
+
 .img-card-right {
+	background-image: url("../img/header-img.png");
+	height: 400px;
+	width: 400px;
 	display: inline-block;
 	position: absolute;
+	background-color: pink
 	right: 0%;
 	top: 18%;
+
+	background-repeat: no-repeat;
 
 }
 
@@ -169,9 +192,13 @@ h1, h2, h3, h4, h5 {
 	right: 0%;
 }
 
-.img-python-code {
+.image-python-code {
+	background-image: url("../img/mid-page-accent.jpg");
+	height: 200px;
+	width: 900px;
 	display: block;
 	margin: 0 auto;
+	background-repeat: no-repeat;
 }
 
 .three-columns {
@@ -206,4 +233,12 @@ footer {
 
 footer p {
 	text-align: center;
+}
+
+h3 {
+	font-family: 'Rubik Mono One', sans-serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
 }
